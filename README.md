@@ -8,5 +8,5 @@ Run the command:
 
 
 ## Saving these for later
-https://medium.com/@Roli_Dori/deploy-vue-cli-3-project-to-github-pages-ebeda0705fbd
+https://medium.com/@Roli_Dori/deploy-vue-cli-3-project-to-github-pages-ebeda0705fbd  
 https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/
