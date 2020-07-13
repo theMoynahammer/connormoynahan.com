@@ -1,32 +1,31 @@
 <template>
   <v-app>
-    <v-app-bar
+    <!-- <v-app-bar
       app
       color="#4682B4"
       dark
     >
       <div class="d-flex align-center">
-        <!-- <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
+        <v-img
+          alt="Headshot"
+          class="shrink mr-2 headshot-navbar"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          :src="require(`./assets/headshot.jpg`)"
           transition="scale-transition"
-          width="40"
-        /> -->
+        />
 
-        <!-- <v-img
+        <v-img
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
-        /> -->
-        Connor's Coding Playground
+        />
+        Connor Moynahan
       </div>
 
-      <v-spacer></v-spacer>
+      <v-spacer></v-spacer> -->
 
       <!-- <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
@@ -36,10 +35,10 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn> -->
-      <router-link class="router-options" to="/">Home</router-link> |
-      <router-link class="router-options" to="/searchbgg">Search BGG</router-link>
+      <!-- <router-link class="router-options" to="/">About</router-link> |
+      <router-link class="router-options" to="/searchbgg">Search BGG</router-link> -->
       
-    </v-app-bar>
+    <!-- </v-app-bar> -->
 
     <v-content>
       <router-view/>
@@ -69,6 +68,12 @@ export default {
 .router-options {
   color: white;
   margin: 10px;
+}
+
+.headshot-navbar{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 </style>

@@ -1,0 +1,27 @@
+<template>
+    <v-container>
+        <div class="search">
+            <h1>Search for a board game</h1>
+            <v-row>
+                <v-col cols="12" sm="6" md="3">
+                    <v-text-field color="#FF6347" v-model="searchInput" label="Search BoardGameGeek" outlined clearable
+                        height="25" append-icon="mdi-magnify" @keyup.enter="search"></v-text-field>
+                </v-col>
+                <v-col>
+                    <v-btn color="#FF6347" @click="search" height="56px">Search</v-btn>
+                </v-col>
+            </v-row>
+            <v-col>
+                <span v-show="searchHasHappened"><strong>{{numberOfResponses}} results</strong></span>
+                <ul style="list-style-type:none;">
+                    <li v-for="(result, index) in searchResponse" :key="index">
+                        <a :href="`https://boardgamegeek.com/boardgame/${result['$'].id}`" target="_blank"
+                            rel="noopener noreferrer">
+                            {{result.name[0]['$'].value}}
+                        </a>
+                    </li>
+                </ul>
+            </v-col>
+        </div>
+    </v-container>
+</template>
