@@ -23,11 +23,6 @@
                 </ul>
             </v-col>
         </div> -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -127,7 +122,7 @@
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><img :src="require(`../assets/capitalone-logo.png`)" style="width:40px;margin-right:5px;" alt="Avatar"><b>Web Developer / something.com</b></h5>
+          <h5 class="w3-opacity"><img :src="require(`../assets/capitalone-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>Web Developer / something.com</b></h5>
           <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
@@ -142,12 +137,12 @@
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge text-light-blue"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
+          <h5 class="w3-opacity"><img :src="require(`../assets/vt-logo.svg`)" style="height:20px;margin-right:10px;" alt="Avatar"><b>B.S. Business Information Technology</b></h5>
+          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007-2011</h6>
+          <!-- <p>Web Development! All I need to know in one place</p> -->
+          <!-- <hr> -->
         </div>
-        <div class="w3-container">
+        <!-- <div class="w3-container">
           <h5 class="w3-opacity"><b>London Business School</b></h5>
           <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
           <p>Master Degree</p>
@@ -157,7 +152,7 @@
           <h5 class="w3-opacity"><b>School of Coding</b></h5>
           <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
           <p>Bachelor Degree</p><br>
-        </div>
+        </div> -->
       </div>
 
     <!-- End Right Column -->

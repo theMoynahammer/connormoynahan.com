@@ -1,27 +1,81 @@
 <template>
-    <v-container>
-        <div class="search">
-            <h1>Search for a board game</h1>
-            <v-row>
-                <v-col cols="12" sm="6" md="3">
-                    <v-text-field color="#FF6347" v-model="searchInput" label="Search BoardGameGeek" outlined clearable
-                        height="25" append-icon="mdi-magnify" @keyup.enter="search"></v-text-field>
-                </v-col>
-                <v-col>
-                    <v-btn color="#FF6347" @click="search" height="56px">Search</v-btn>
-                </v-col>
-            </v-row>
-            <v-col>
-                <span v-show="searchHasHappened"><strong>{{numberOfResponses}} results</strong></span>
-                <ul style="list-style-type:none;">
-                    <li v-for="(result, index) in searchResponse" :key="index">
-                        <a :href="`https://boardgamegeek.com/boardgame/${result['$'].id}`" target="_blank"
-                            rel="noopener noreferrer">
-                            {{result.name[0]['$'].value}}
-                        </a>
-                    </li>
-                </ul>
-            </v-col>
-        </div>
-    </v-container>
+    <v-app>
+        <v-navigation-drawer v-model="showDrawer" absolute temporary>
+            <v-list-item>
+                <v-list-item-avatar>
+                    <v-img :src="require(`./assets/headshot.jpg`)"></v-img>
+                </v-list-item-avatar>
+
+                <v-list-item-content>
+                    <v-list-item-title>Connor Moynahan</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+
+            <v-divider class="ma-0"></v-divider>
+
+            <v-list dense>
+
+                <!-- <v-list-item
+            v-for="item in items"
+            :key="item.title"
+            link
+          > -->
+                <v-list-item link>
+                    <v-list-item-icon>
+                        <v-icon>fa-file</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Resume</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item link>
+                    <v-list-item-icon>
+                        <v-icon>fa-file</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>About Me</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item link>
+                    <v-list-item-icon>
+                        <v-icon>fa-file</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Contact</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
+        <v-app-bar app color="#4682B4" dark>
+            <v-app-bar-nav-icon @click="showDrawer = !showDrawer"></v-app-bar-nav-icon>
+            <div class="d-flex align-center">
+                <!-- <v-img
+            alt="Headshot"
+            class="shrink mr-2 headshot-navbar"
+            contain
+            :src="require(`./assets/headshot.jpg`)"
+            transition="scale-transition"
+          /> -->
+
+                <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down logo-class" contain
+                    :src="require(`./assets/logo.svg`)" width="50" />
+                <!-- <h3 style="margin-left:10px;">Connor Moynahan</h3> -->
+            </div>
+
+            <v-spacer></v-spacer>
+
+            <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+                <span class="mr-2">Latest Release</span>
+                <v-icon>mdi-open-in-new</v-icon>
+            </v-btn>
+            <router-link class="router-options" to="/">About</router-link> |
+            <router-link class="router-options" to="/searchbgg">Search BGG</router-link>
+
+        </v-app-bar>
+
+        <v-content>
+            <router-view />
+            <!-- <HelloWorld/> -->
+        </v-content>
+    </v-app>
 </template>

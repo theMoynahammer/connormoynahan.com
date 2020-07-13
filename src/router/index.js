@@ -21,10 +21,35 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Resume',
+    redirect: '/resume',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../components/Resume.vue')
+    // component: () => import(/* webpackChunkName: "about" */ '../components/Resume.vue')
+  },
+  {
+  path: '/resume',
+  name: 'Resume',
+  // route level code-splitting
+  // this generates a separate chunk (about.[hash].js) for this route
+  // which is lazy-loaded when the route is visited.
+  component: () => import(/* webpackChunkName: "about" */ '../components/Resume.vue')
+},
+  {
+    path: '/aboutme',
+    name: 'AboutMe',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../components/AboutMe.vue')
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../components/Contact.vue')
   }
 ]
 
