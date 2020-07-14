@@ -73,6 +73,11 @@
 
             <v-spacer></v-spacer>
 
+            <!-- <v-btn  text>
+                <a id ="download-resume-link" href="/Connor Moynahan - Resume.pdf" download>
+                <v-icon>mdi-download</v-icon>
+                </a>
+            </v-btn> -->
             <v-btn @click="dialogOpen = true" text>
                 <!-- <span class="mr-2">Latest Release</span> -->
                 <v-icon>mdi-information-outline</v-icon>

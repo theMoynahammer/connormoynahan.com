@@ -53,8 +53,10 @@
             <!-- <p><i class="fa fa-user-o fa-fw w3-margin-right w3-large text-light-blue"></i><strong>Connor Moynahan</strong></p> -->
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large text-light-blue"></i>Full Stack Engineer/</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large text-light-blue"></i>Richmond, VA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large text-light-blue"></i>connor.moynahan@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large text-light-blue"></i>703-994-1421</p>
+          <p><a href="mailto:connor.moynahan@gmail.com"><i class="fa fa-envelope fa-fw w3-margin-right w3-large text-light-blue"></i>connor.moynahan@gmail.com</a></p>
+          <p><a href="tel:703-994-1421"><i class="fa fa-phone fa-fw w3-margin-right w3-large text-light-blue"></i>703-994-1421</a></p>
+           <p> <a href="/Connor Moynahan - Resume.pdf" download><i class="fa fa-download fa-fw w3-margin-right w3-large text-light-blue"></i>Download Resume</a></p>
+
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right text-light-blue"></i>Technologies</b></p>
@@ -241,6 +243,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 .left-info-override{
     padding-top: 10px;
+}
+
+#download-resume-link{
+  text-decoration: none; 
+  /* color: white; */
 }
 
 .text-light-blue{
