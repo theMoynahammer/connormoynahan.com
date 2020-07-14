@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row  justify="space-around">
-            <v-column>
+            <v-col>
                 <v-card width="100%">
                     <v-card-title>
                         Contact Me
@@ -10,14 +10,14 @@
                             Hit me up.
                             </v-card-text>
                 </v-card>
-            </v-column>
-                        <!-- <v-column>
+            </v-col>
+                        <!-- <v-col>
                 <v-card width="100%">
                     <v-card-title>
                         I dont know what should go here
                         </v-card-title>
                 </v-card>
-            </v-column> -->
+            </v-col> -->
         </v-row>
     </v-container>
 </template>

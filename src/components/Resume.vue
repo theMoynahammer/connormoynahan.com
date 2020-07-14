@@ -1,5 +1,6 @@
 <template>
     <v-container>
+       
         <!-- <div class="search">
             <h1>Search for a board game</h1>
             <v-row>
@@ -28,7 +29,16 @@
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+    <div class="w3-container w3-card w3-white w3-margin-bottom custom-padding-overview">
+        <h2 class="w3-text-grey">Connor Moynahan</h2>
+        <div class="w3-container">
+            <p>{{summaryText}}</p>
+          <!-- <h5 class="w3-opacity"><img :src="require(`../assets/ge-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>General Electric / Staff Software Engineer</b></h5>
+          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr> -->
+        </div>
+      </div>
     <!-- Left Column -->
     <div class="w3-third">
     
@@ -40,7 +50,7 @@
           </div> -->
         </div>
         <div class="w3-container left-info-override">
-            <p><i class="fa fa-user-o fa-fw w3-margin-right w3-large text-light-blue"></i><strong>Connor Moynahan</strong></p>
+            <!-- <p><i class="fa fa-user-o fa-fw w3-margin-right w3-large text-light-blue"></i><strong>Connor Moynahan</strong></p> -->
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large text-light-blue"></i>Full Stack Engineer/</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large text-light-blue"></i>Richmond, VA</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large text-light-blue"></i>connor.moynahan@gmail.com</p>
@@ -101,36 +111,31 @@
 
     <!-- Right Column -->
     <div class="w3-twothird">
-        
-<div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey">Overview</h2>
-        <div class="w3-container">
-            <p>This is where I will put my summary</p>
-          <!-- <h5 class="w3-opacity"><img :src="require(`../assets/ge-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>General Electric / Staff Software Engineer</b></h5>
-          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr> -->
-        </div>
-      </div>
-
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge text-light-blue"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><img :src="require(`../assets/ge-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>General Electric / Staff Software Engineer</b></h5>
-          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <h6 class="text-light-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - <span class="w3-tag background-light-blue w3-round">Current</span></h6>
           <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><img :src="require(`../assets/capitalone-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>Web Developer / something.com</b></h5>
-          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <h5 class="w3-opacity"><img :src="require(`../assets/capitalone-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>Capital One / Senior Software Engineer</b></h5>
+          <h6 class="text-light-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
           <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 class="w3-opacity"><img :src="require(`../assets/capitalone-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>Capital One / Senior Software Engineer</b></h5>
+          <h6 class="text-light-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+                <div class="w3-container">
+          <h5 class="w3-opacity"><img :src="require(`../assets/capitalone-logo.png`)" style="width:30px;margin-right:5px;" alt="Avatar"><b>Capital One / Senior Software Engineer</b></h5>
+          <h6 class="text-light-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
         </div>
       </div>
 
@@ -138,7 +143,7 @@
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge text-light-blue"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><img :src="require(`../assets/vt-logo.svg`)" style="height:20px;margin-right:10px;" alt="Avatar"><b>B.S. Business Information Technology</b></h5>
-          <h6 class="text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007-2011</h6>
+          <h6 class="text-light-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007-2011</h6>
           <!-- <p>Web Development! All I need to know in one place</p> -->
           <!-- <hr> -->
         </div>
@@ -181,6 +186,7 @@
 <script>
 import axios from 'axios';  
 import xml2js from 'xml2js';
+import summaryText from '../text/summary';
 
 export default {
   name: 'SearchBgg',
@@ -189,6 +195,7 @@ export default {
     searchResponse: null,
     numberOfResponses: null,
     searchHasHappened: false,
+    summaryText: summaryText.text,
   }),
   methods: {
     search(){
@@ -238,5 +245,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 .text-light-blue{
     color: #4682B4;
+}
+
+.background-light-blue{
+    background-color: #4682B4;
+}
+
+.text-light-gray{
+    color: #757575;
+}
+
+.custom-padding-overview{
+    margin: 0px 8px;
 }
 </style>

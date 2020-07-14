@@ -46,6 +46,14 @@
                         <v-list-item-title>Contact</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+                                <v-list-item link to="/technologies">
+                    <v-list-item-icon>
+                        <v-icon>fa-code</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Technologies</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-list>
         </v-navigation-drawer>
         <v-app-bar app color="#4682B4" dark>
@@ -61,11 +69,14 @@
 
                 <v-img alt="logo" class="shrink mt-1 logo-class" contain
                     :src="require(`./assets/logo.svg`)" style="cursor: pointer;" width="50" @click="showDrawer = !showDrawer"/>
-                <!-- <h3 style="margin-left:10px;">Connor Moynahan</h3> -->
             </div>
 
             <v-spacer></v-spacer>
 
+            <v-btn @click="dialogOpen = true" text>
+                <!-- <span class="mr-2">Latest Release</span> -->
+                <v-icon>mdi-information-outline</v-icon>
+            </v-btn>
              <v-btn href="https://www.linkedin.com/in/connor-moynahan-0a568698/" target="_blank" text>
                 <!-- <span class="mr-2">Latest Release</span> -->
                 <v-icon>fa-linkedin-square</v-icon>
@@ -79,6 +90,37 @@
 
         </v-app-bar>
 
+        <v-dialog
+      v-model="dialogOpen"
+      width="500"
+    >
+      <v-card>
+        <v-card-title
+          class="headline lighten-2 dialog-class"
+          primary-title
+        >
+          About this site
+        </v-card-title>
+
+        <v-card-text>
+          {{aboutThisSite}}
+        </v-card-text>
+
+        <!-- <v-divider></v-divider> -->
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="primary"
+            text
+            @click="dialogOpen = false"
+          >
+            Neat!
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
         <v-content>
             <router-view />
             <!-- <HelloWorld/> -->
@@ -88,7 +130,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld';
-
+import aboutThisSite from './text/aboutThisSite';
 export default {
   name: 'App',
 
@@ -98,6 +140,8 @@ export default {
 
   data: () => ({
     showDrawer: false,
+    dialogOpen: false,
+    aboutThisSite: aboutThisSite.text,
         //     items: [
         //   { title: 'Home', icon: 'dashboard' },
         //   { title: 'About', icon: 'question_answer' },
@@ -119,6 +163,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+
+.dialog-class{
+  background-color: #4682B4;
+  color: white;
+  margin-bottom: 5px;
 }
 
 #main-nav-bar{

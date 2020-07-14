@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row  justify="space-around">
-            <v-column>
+            <v-col sm="6">
                 <v-card class="about-me-card">
                     <v-card-title>
                         About Me
@@ -20,6 +20,8 @@
                             I need to figure out what information is good to go here.
                             </v-card-text>
                 </v-card>
+                </v-col>
+                <v-col sm="6">
                 <v-card class="about-me-card">
                     <v-card-title>
                         About Me
@@ -29,7 +31,16 @@
                             I need to figure out what information is good to go here.
                             </v-card-text>
                 </v-card>
-            </v-column>
+                <v-card class="about-me-card">
+                    <v-card-title>
+                        About Me
+                        </v-card-title>
+                        <v-card-text>
+                            Placeholder text for right here.<br/>
+                            I need to figure out what information is good to go here.
+                            </v-card-text>
+                </v-card>
+            </v-col>
         </v-row>
     </v-container>
 </template>
