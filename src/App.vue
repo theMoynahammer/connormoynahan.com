@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <v-navigation-drawer v-model="showDrawer" absolute temporary>
+        <v-navigation-drawer v-model="showDrawer" absolute temporary id="main-nav-bar">
             <v-list-item>
                 <v-list-item-avatar>
                     <v-img :src="require(`./assets/headshot.jpg`)"></v-img>
@@ -59,8 +59,8 @@
             transition="scale-transition"
           /> -->
 
-                <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down logo-class" contain
-                    :src="require(`./assets/logo.svg`)" width="50" />
+                <v-img alt="logo" class="shrink mt-1 logo-class" contain
+                    :src="require(`./assets/logo.svg`)" style="cursor: pointer;" width="50" @click="showDrawer = !showDrawer"/>
                 <!-- <h3 style="margin-left:10px;">Connor Moynahan</h3> -->
             </div>
 
@@ -119,6 +119,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+
+#main-nav-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  overflow-y:scroll;
 }
 
 </style>
