@@ -21,6 +21,7 @@ export default {
         `Architected/coded HTML publishing mechanism from Content Management to CRWeb. Uses S3, Cloudwatch monitoring, and multiple lambdas to implement`,
         `Coded numerous features for CRWeb, and provided production support and assistance during disaster recovery simulations`,
         `Designed DynamoDb strategy for the Servicing Events Hub.  This hub stores kafka data streams, enabling easy retrieval via an enterprise-wide API.`,
+        `Code enhancements to Call Center agent user lookup software in .NET`,
 
     ],
     capOneQa: [

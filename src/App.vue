@@ -32,7 +32,7 @@
                 </v-list-item>
                 <v-list-item link to="/aboutme">
                     <v-list-item-icon>
-                        <v-icon>fa-file</v-icon>
+                        <v-icon>fa-user</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>About Me</v-list-item-title>
@@ -40,7 +40,7 @@
                 </v-list-item>
                 <v-list-item link to="/contact">
                     <v-list-item-icon>
-                        <v-icon>fa-file</v-icon>
+                        <v-icon style="width:24px;">fa-id-card-o</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>Contact</v-list-item-title>
@@ -48,7 +48,7 @@
                 </v-list-item>
                                 <v-list-item link to="/technologies">
                     <v-list-item-icon>
-                        <v-icon>fa-code</v-icon>
+                        <v-icon style="width:24px;">fa-code</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>Technologies</v-list-item-title>

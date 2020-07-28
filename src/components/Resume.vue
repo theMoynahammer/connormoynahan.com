@@ -51,8 +51,7 @@
                         </div>
                         <div class="w3-container left-info-override">
                             <!-- <p><i class="fa fa-user-o fa-fw w3-margin-right w3-large text-light-blue"></i><strong>Connor Moynahan</strong></p> -->
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large text-light-blue"></i>Full Stack
-                                Engineer/</p>
+                            <!-- <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large text-light-blue"></i>Full Stack Engineer / Problem Solver</p> -->
                             <p><i class="fa fa-home fa-fw w3-margin-right w3-large text-light-blue"></i>Richmond, VA</p>
                             <p><a href="mailto:connor.moynahan@gmail.com"><i
                                         class="fa fa-envelope fa-fw w3-margin-right w3-large text-light-blue"></i>connor.moynahan@gmail.com</a>
@@ -67,10 +66,10 @@
                             <hr>
 
                             <p class="w3-large"><b><i
-                                        class="fa fa-code fa-fw w3-margin-right text-light-blue"></i>Technologies</b>
+                                        class="fa fa-code fa-fw w3-margin-right text-light-blue padding-overwrite"></i>Languages/Technologies</b>
                             </p>
                             <!-- <p>Adobe Photoshop</p> -->
-                            <h5>Proficient</h5>
+                            <!-- <h5>Proficient</h5> -->
                             <div class="skills-section" v-for="skill in proficientSkills" :key="skill.name">
                                 <!-- <div class="tech-skill"> -->
                                 <!-- <p class="display-inline-block"> -->
@@ -78,6 +77,12 @@
                                 <!-- </p> -->
                                 <!-- </div> -->
                             </div>
+                            <p class="w3-large"><b><i
+                                        class="fa fa-certificate fa-fw w3-margin-right text-light-blue padding-overwrite"></i>Certifications</b>
+                            </p>
+                            <div class="skills-section">
+                                <v-img class="tech-logo" src="/assets/tech-logos/exam-az300-600x600.png"></v-img>AZ-300 Microsoft Azure Architect Technologies Exam - Nov 2019
+                                </div>
                             <!-- <ul>
                 <li v-for="skill in proficientSkills" :key="skill.name">
                     <v-img style="height:10px;width: 10px;" :src="skill.logo"></v-img>{{ skill.name }}
@@ -151,8 +156,8 @@
                             <h5 class="w3-opacity margin-top-0"><img src="/assets/capitalone-logo.png"
                                     style="width:30px;margin-right:5px;" alt="Avatar"><b><span class="italics">Capital
                                         One,</span> Senior Software Engineer - Small Business</b></h5>
-                            <h6 class="text-light-gray">Mar 2012 -
-                                Dec 2014</h6>
+                            <h6 class="text-light-gray">Sep 2018 -
+                                Jan 2019</h6>
                                 <!-- <i class="fa fa-calendar fa-fw w3-margin-right"></i> -->
                             <!-- <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p> -->
                             <ul v-for="(item, index) in workExperienceJson.capOneSmallBusiness" :key="index">
@@ -164,8 +169,8 @@
                             <h5 class="w3-opacity margin-top-0"><img src="/assets/capitalone-logo.png"
                                     style="width:30px;margin-right:5px;" alt="Avatar"><b><span class="italics">Capital
                                         One,</span> Senior Software Engineer - Consumer Card</b></h5>
-                            <h6 class="text-light-gray">Mar 2012 -
-                                Dec 2014</h6>
+                            <h6 class="text-light-gray">Feb 2014 -
+                                Aug 2018</h6>
                             <!-- <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p> -->
                             <ul v-for="(item, index) in workExperienceJson.capOneCard" :key="index">
                                 <li>{{item}}</li>
@@ -176,8 +181,8 @@
                             <h5 class="w3-opacity margin-top-0"><img src="/assets/capitalone-logo.png"
                                     style="width:30px;margin-right:5px;" alt="Avatar"><b><span class="italics">Capital
                                         One,</span> Testing Specialist</b></h5>
-                            <h6 class="text-light-gray">Mar 2012 -
-                                Dec 2014</h6>
+                            <h6 class="text-light-gray">Jul 2012 -
+                                Jan 2014</h6>
                             <ul v-for="(item, index) in workExperienceJson.capOneQa" :key="index">
                                 <li>{{item}}</li>
                             </ul>
@@ -187,7 +192,7 @@
                             <h5 class="w3-opacity margin-top-0"><img src="/assets/capitalone-logo.png"
                                     style="width:30px;margin-right:5px;" alt="Avatar"><b><span class="italics">Capital
                                         One,</span> Process Manager - Tech Development Program</b></h5>
-                            <h6 class="text-light-gray">Jul 2011 - July 2012</h6>
+                            <h6 class="text-light-gray">Jul 2011 - Jul 2012</h6>
                             <ul v-for="(item, index) in workExperienceJson.capOneProcess" :key="index">
                                 <li>{{item}}</li>
                             </ul>
@@ -203,9 +208,9 @@
                         <div class="w3-container">
                             <h5 class="w3-opacity margin-top-0"><img src="/assets/vt-logo.svg" style="height:20px;margin-right:10px;"
                                     alt="Avatar"><b>B.S. Business Information Technology</b></h5>
-                            <h6 class="text-light-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011
+                            <h6 class="text-light-gray">2007 - 2011
                             </h6>
-                            <p>{{workExperienceJson.bitInfo}}</p>
+                            <!-- <p>{{workExperienceJson.bitInfo}}</p> -->
                             <!-- <hr> -->
                         </div>
                         <!-- <div class="w3-container">

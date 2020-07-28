@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-btn id="weaknesses-button" dark>My Weaknesses</v-btn>
+        <v-btn v-if="!isMobile" id="weaknesses-button" dark>My Weaknesses</v-btn>
         <v-row  justify="space-around">
             <v-col sm="6">
                 <v-card class="about-me-card">
@@ -55,12 +55,13 @@ export default {
     data: () => ({
     }),
     methods: {
-        // animateButton() {
-        //     var randX = Math.floor(Math.random() * (window.innerWidth - 100));
-        //     var randY = Math.floor(Math.random() * (window.innerHeight - 100));
-        //     console.log([randX, randY]);
-        //     this.weaknessesButton.stop().animate({ "left": randX + "px", "top": randY + "px" });
-        // }
+         isMobile() {
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+     return true
+   } else {
+     return false
+   }
+    }
     },
     mounted() {
         $(document).ready(function() {
