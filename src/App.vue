@@ -3,7 +3,7 @@
         <v-navigation-drawer v-model="showDrawer" absolute temporary id="main-nav-bar">
             <v-list-item>
                 <v-list-item-avatar>
-                    <v-img :src="require(`./assets/headshot.jpg`)"></v-img>
+                    <v-img src="/assets/headshot.jpg"></v-img>
                 </v-list-item-avatar>
 
                 <v-list-item-content>
@@ -63,12 +63,12 @@
             alt="Headshot"
             class="shrink mr-2 headshot-navbar"
             contain
-            :src="require(`./assets/headshot.jpg`)"
+            src="/assets/headshot.jpg"
             transition="scale-transition"
           /> -->
 
                 <v-img alt="logo" class="shrink mt-1 logo-class" contain
-                    :src="require(`./assets/logo.svg`)" style="cursor: pointer;" width="50" @click="showDrawer = !showDrawer"/>
+                    src="/assets/logo.svg" style="cursor: pointer;" width="50" @click="showDrawer = !showDrawer"/>
             </div>
 
             <v-spacer></v-spacer>
