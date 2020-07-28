@@ -43,17 +43,17 @@
                         <v-icon style="width:24px;">fa-id-card-o</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
-                        <v-list-item-title>Contact</v-list-item-title>
+                        <v-list-item-title>Contact Info</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                                <v-list-item link to="/technologies">
+                                <!-- <v-list-item link to="/technologies">
                     <v-list-item-icon>
                         <v-icon style="width:24px;">fa-code</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>Technologies</v-list-item-title>
                     </v-list-item-content>
-                </v-list-item>
+                </v-list-item> -->
             </v-list>
         </v-navigation-drawer>
         <v-app-bar app color="#4682B4" dark>
@@ -82,13 +82,13 @@
                 <!-- <span class="mr-2">Latest Release</span> -->
                 <v-icon>mdi-information-outline</v-icon>
             </v-btn>
-             <v-btn href="https://www.linkedin.com/in/connor-moynahan-0a568698/" target="_blank" text>
+             <v-btn href="https://www.linkedin.com/in/connor-moynahan-0a568698/" target="_blank" rel="noopener noreferrer" text>
                 <!-- <span class="mr-2">Latest Release</span> -->
                 <v-icon>fa-linkedin-square</v-icon>
             </v-btn>
-                         <v-btn href="mailto:connor.moynahan@gmail.com" text>
+                         <v-btn link to="/contact" text>
                 <!-- <span class="mr-2">Latest Release</span> -->
-                <v-icon>fa-envelope</v-icon>
+                <v-icon>fa-id-card-o</v-icon>
             </v-btn>
             <!--<router-link class="router-options" to="/">About</router-link> |
             <router-link class="router-options" to="/searchbgg">Search BGG</router-link> -->

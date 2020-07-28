@@ -1,5 +1,6 @@
 <template>
     <v-container>
+        <h2 class="w3-text-grey">About Me</h2>
         <!-- <v-btn v-if="!isMobile" id="weaknesses-button" dark>My Weaknesses</v-btn>
         <v-row  justify="space-around">
             <v-col sm="6">
