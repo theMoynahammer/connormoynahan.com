@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-btn v-if="!isMobile" id="weaknesses-button" dark>My Weaknesses</v-btn>
+        <!-- <v-btn v-if="!isMobile" id="weaknesses-button" dark>My Weaknesses</v-btn>
         <v-row  justify="space-around">
             <v-col sm="6">
                 <v-card class="about-me-card">
@@ -42,6 +42,24 @@
                             </v-card-text>
                 </v-card>
             </v-col>
+        </v-row> -->
+
+        <v-row>
+            <v-col>
+
+<v-expansion-panels>
+    <v-expansion-panel
+      v-for="(item,i) in aboutMeContent.listItems"
+      :key="i"
+    >
+      <v-expansion-panel-header><b>{{item.title}}</b></v-expansion-panel-header>
+      <v-expansion-panel-content>
+        {{item.content}}
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
+
+            </v-col>
         </v-row>
     </v-container>
 </template>
@@ -49,10 +67,12 @@
 <script>
 
 import $ from 'jquery';
+import aboutMeContent from '../text/aboutMe';
 
 export default {
     name: 'AboutMe',
     data: () => ({
+        aboutMeContent,
     }),
     methods: {
          isMobile() {

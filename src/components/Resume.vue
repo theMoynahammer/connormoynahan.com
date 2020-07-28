@@ -63,20 +63,46 @@
                                         class="fa fa-download fa-fw w3-margin-right w3-large text-light-blue"></i>Download
                                     Resume</a></p>
 
-                            <hr>
+                            <hr class="custom-hr">
 
-                            <p class="w3-large"><b><i
+                            <p class="w3-large margin-bottom-0-class"><b><i
                                         class="fa fa-code fa-fw w3-margin-right text-light-blue padding-overwrite"></i>Languages/Technologies</b>
                             </p>
                             <!-- <p>Adobe Photoshop</p> -->
                             <!-- <h5>Proficient</h5> -->
-                            <div class="skills-section" v-for="skill in proficientSkills" :key="skill.name">
+                            <v-container>
+                                        <v-row>
+                                            <v-col sm="6">
+                            <div class="skills-section" v-for="skill in proficientSkills.slice(0, 8)" :key="skill.name">
                                 <!-- <div class="tech-skill"> -->
                                 <!-- <p class="display-inline-block"> -->
+                                    
+                                            
+                                            
+                                        
                                 <v-img class="tech-logo" :src="skill.logo"></v-img>{{ skill.name }}
+                                
                                 <!-- </p> -->
                                 <!-- </div> -->
                             </div>
+                            </v-col>
+                                <v-col sm="6">
+                                    <div class="skills-section" v-for="skill in proficientSkills.slice(8, 16)" :key="skill.name">
+                                <!-- <div class="tech-skill"> -->
+                                <!-- <p class="display-inline-block"> -->
+                                    
+                                            
+                                            
+                                        
+                                <v-img class="tech-logo" :src="skill.logo"></v-img>{{ skill.name }}
+                                
+                                <!-- </p> -->
+                                <!-- </div> -->
+                            </div>
+                                            </v-col>
+                                </v-row>
+                                        </v-container>
+                                        <hr class="custom-hr">
                             <p class="w3-large"><b><i
                                         class="fa fa-certificate fa-fw w3-margin-right text-light-blue padding-overwrite"></i>Certifications</b>
                             </p>
@@ -292,6 +318,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   margin-right: 5px;
 }
 
+.custom-hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .italics{
   font-style: italic;
 }
@@ -307,6 +338,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 .margin-bottom-class{
   margin-bottom: 20px;
+}
+
+.margin-bottom-0-class{
+    margin-bottom: 0px;
 }
 
 .display-inline-block{
