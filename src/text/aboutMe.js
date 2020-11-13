@@ -11,22 +11,13 @@ export default {
             in an efficient way. My favorite part of this industry is that the learning is neverending. The tech landscape is evolving and changing rapidly, and I enjoy learning about a topic and strengthening my knowledge base.`
         },
         {
-            title: "Sports",
-            content: `I played tennis and basketball for my High School and played rugby for Virginia Tech for 3 years. I was too banged up 
-            to continue my rugby career after college, but I continue to play tennis and basketball.
-            I was also a tennis coach for 4 years at the end of HS through college.  I've always had a love/hate relationship with running,
-            but I conquered that in 2019 when I completed the Richmond Half-Marathon for the first time, after previously running in the Monument 10k for the past
-            ~7 years. I enjoy following the NBA and Washington sports teams. I also enjoy golfing, I don't play enough to see steady improvement, but it's a great way to spend a Saturday morning.`
-        },
-        {
-            title: `"Fun" Facts`,
-            content: "I went skydiving back in 2015 with my middle brother. It was thrilling and terrifying, the most anxiety inducing aspect of the whole process was sitting in the plane on the way up. "
-        },
-        
-        {
-            title: "Other Hobbies",
+            title: "Hobbies",
             content: `I enjoy playing strategy board games; sitting down and setting a plan (win or lose) is always fun to me. I also enjoy being active, be it: yard work, frisbee golf, golf, walking, weight lifting, running or basketball.
-             I am a fan of video games as well, and play both my Switch and my Xbox.`
+             I am a fan of video games as well, and play both my Switch and my Xbox. I played tennis and basketball for my High School and played rugby for Virginia Tech for 3 years. I was too banged up 
+             to continue my rugby career after college, but I continue to play tennis and basketball.
+             I was also a tennis coach for 4 years at the end of HS through college.  I've always had a love/hate relationship with running,
+             but I conquered that in 2019 when I completed the Richmond Half-Marathon for the first time, after previously running in the Monument 10k for the past
+             ~7 years. I enjoy following the NBA and Washington sports teams. I also enjoy golfing, I don't play enough to see steady improvement, but it's a great way to spend a Saturday morning.`
         },
         {
             title: "Family",
