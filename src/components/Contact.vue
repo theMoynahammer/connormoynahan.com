@@ -38,7 +38,7 @@
                         </v-card-title>
                         <v-card-subtitle>https://www.linkedin.com/in/connor-moynahan-0a568698/</v-card-subtitle>
                         <v-card-text>
-                            Recently updated my LinkedIn profile after years of dormancy.
+                            Recently updated my LinkedIn profile.
                             </v-card-text>
                             <v-card-actions>
                                 <v-spacer></v-spacer>
@@ -49,13 +49,13 @@
                     <v-card-title>
                         <v-icon class="icon-style">fa-download</v-icon>Download my resume
                         </v-card-title>
-                        <v-card-subtitle>This is up to date as of July 2020.</v-card-subtitle>
+                        <v-card-subtitle>This is up to date as of December 2020.</v-card-subtitle>
                         <v-card-text>
                             Want to read my resume offline? Here's your chance.
                             </v-card-text>
                             <v-card-actions>
                                 <v-spacer></v-spacer>
-                                <v-btn href="/Connor Moynahan - Resume 072020.pdf" download>Download my resume</v-btn>
+                                <v-btn href="/Connor Moynahan - updated 12_2020.pdf" download>Download my resume</v-btn>
                             </v-card-actions>
                 </v-card>
             </v-col>

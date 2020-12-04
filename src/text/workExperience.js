@@ -1,11 +1,12 @@
 export default {
     ge: [
+        `Redesigned Java SSO Password API to remove Siteminder dependency and to directly update password in Ping Directory`,
+        `Created new SAML/OIDC SSO self-service portals using Vue.js with Vuetify component library. Currently migrating users off of old PHP portals.`,
         `Architected/Designed several containerized microservices for the Dynamic Authentication Service project (GE SSO Replacement)`,
         `Created DevOps pipelines using a combination of AWS Codebuild, AWS CodePipeline, AWS Lambda, Docker, and AWS Fargate to test/deploy code into live environment upon Github branch merge`,
         `Instituted requirement for working Cloud Formation Templates to maintain Infrastructure as Code (IaC) prior to story completion`,
-        `Designed/coded numerous RESTful APIs`,
-        `Created new GE Login Page and new SAML/OIDC self-service portals using Vue.js`,
-        `Currently working on PING Simplification effort to move to a redesigned Ping Identity Stack. Interfaced with Ping Engineers, business leads and security team to enable seamless transition of 1000s of applications to new SSO environment. Responsibilities included: created comprehensive documentation for Custom Login Screen owners to migrate to new stack, designing log off solution (SLO), implementing password management settings and testing edge cases.`,
+        `Designed/coded numerous RESTful APIs using node.js with koa.js/express.js/hapi.js web frameworks`,
+        `Currently working on PING Simplification effort to move to a redesigned Ping Identity Stack. Interfaced with Ping Engineers, business leads and security team to enable seamless transition of 1000s of applications to new SSO environment. Responsibilities included: created comprehensive documentation for Custom Login Screen owners to migrate to the new stack, designing log off solution, implementing password management settings and testing edge cases.`,
         `Coded misc Java/PHP code fixes for legacy applications. Mainly to improve security or improve user experience.`,
         `Improved agile processes`,
         `Mentored Junior engineers, managed GitHub repos.`,

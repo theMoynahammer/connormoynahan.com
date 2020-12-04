@@ -59,7 +59,7 @@
                             <p><a href="tel:703-994-1421"><i
                                         class="fa fa-phone fa-fw w3-margin-right w3-large text-light-blue"></i>703-994-1421</a>
                             </p>
-                            <p> <a href="/Connor Moynahan - Resume 072020.pdf" download><i
+                            <p> <a href="/Connor Moynahan - updated 12_2020.pdf" download><i
                                         class="fa fa-download fa-fw w3-margin-right w3-large text-light-blue"></i>Download
                                     Resume</a></p>
 
