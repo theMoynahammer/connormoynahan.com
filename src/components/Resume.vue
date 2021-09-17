@@ -59,7 +59,7 @@
                             <p><a href="tel:703-994-1421"><i
                                         class="fa fa-phone fa-fw w3-margin-right w3-large text-light-blue"></i>703-994-1421</a>
                             </p>
-                            <p> <a href="/Connor Moynahan - updated 12_2020.pdf" download><i
+                            <p> <a href="/Connor Moynahan - updated 9_2021.pdf" download><i
                                         class="fa fa-download fa-fw w3-margin-right w3-large text-light-blue"></i>Download
                                     Resume</a></p>
 
@@ -165,7 +165,7 @@
                         <h2 class="w3-text-grey padding-overwrite">
                           <!-- <i
                                 class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge text-light-blue"></i> -->
-                                Work Experience</h2>
+                                Work Experience as of 12/2020(View resume for up to date experience)</h2>
                         <div class="w3-container">
                             <h5 class="w3-opacity margin-top-0"><img src="/assets/ge-logo.png" style="width:30px;margin-right:5px;"
                                     alt="Avatar"><b><span class="italics">General Electric,</span> Staff Software

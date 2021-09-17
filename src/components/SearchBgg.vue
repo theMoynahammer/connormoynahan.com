@@ -50,6 +50,7 @@ export default {
   }),
   methods: {
     search(){
+      
       const baseBggUrl = "https://www.boardgamegeek.com/xmlapi2/";
       const searchBggUrl = `${baseBggUrl}search?type=boardgame,boardgameexpansion&query=`;
 
